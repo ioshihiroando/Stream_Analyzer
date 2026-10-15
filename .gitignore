@@ -5,3 +5,13 @@ __pycache__/
 .ruff_cache/
 report.json
 .idea/
+
+# temporary
+data/sample.csv
+data/sample.jsonl
+/data/sample.csv
+/data/clean_payments.jsonl
+/data/clean_web.jsonl
+/data/empty.csv
+/data/empty.jsonl
+/data/levels_case.jsonl
