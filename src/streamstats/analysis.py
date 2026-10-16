@@ -18,22 +18,26 @@ def analyze_events(
         analysis_result: AnalysisResult,
         events: Iterable[Event]
 ):
+    """
+    Анализирует файл построчно, который поступает через итерируемый объект events.
+    Обновляет статистику в analysis_result.
+    """
 
     for event in events:
-        # Увеличение общего числа событий
+        # Увеличиваем общее число событий
         analysis_result.event_total_count += 1
 
-        # Увеличение числа событий для уровня текущего события
+        # Увеличиваем число событий для уровня текущего события
         analysis_result.event_by_level[event.level] = analysis_result.event_by_level.get(event.level, 0) + 1
 
-        # Увеличение числа событий для источника текущего события
+        # Увеличиваем число событий для источника текущего события
         analysis_result.event_by_source[event.source] = analysis_result.event_by_source.get(event.source, 0) + 1
 
-        # Увеличение числа ошибок уровня ERROR/CRITICAL для источника текущего события
+        # Увеличиваем число ошибок уровня ERROR/CRITICAL для источника текущего события
         if event.level in ('ERROR', 'CRITICAL'):
             analysis_result.error_sources[event.source] = analysis_result.error_sources.get(event.source, 0) + 1
 
-        # Сравнение временной метки с текущими первой и последней временными метками файла
+        # Сравниваем временную метку с текущими первой и последней временными метками файла
         if analysis_result.first_timestamp is None:
             analysis_result.first_timestamp = event.timestamp
         if analysis_result.last_timestamp is None:
