@@ -1,9 +1,10 @@
-import pytest
 from pathlib import Path
 
+import pytest
+
+from streamstats.errors import StreamStatsError
 from streamstats.models import SkippedEventsCount
 from streamstats.parsers import parse_csv, parse_jsonl
-from streamstats.errors import StreamStatsError
 
 
 def test_parse_csv(tmp_path: Path):

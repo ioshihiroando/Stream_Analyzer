@@ -1,5 +1,4 @@
 import json
-import os
 import subprocess
 import sys
 from pathlib import Path
@@ -22,7 +21,7 @@ def test_cli_jsonl_timestamps_invalid_skip_invalid(tmp_path: Path):
             str(output_file),
             "--skip-invalid",
         ],
-        capture_output=True,
+        check=False, capture_output=True,
         text=True,
         encoding="utf-8",
     )
@@ -58,7 +57,7 @@ def test_cli_jsonl_timestamps_without_skip_invalid(tmp_path: Path):
             "--output",
             str(tmp_path / "report.json"),
         ],
-        capture_output=True,
+        check=False, capture_output=True,
         text=True,
         encoding="utf-8",
         errors="replace",
@@ -84,7 +83,7 @@ def test_cli_jsonl_all_invalid_cases_skip_invalid(tmp_path: Path):
             str(output_file),
             "--skip-invalid",
         ],
-        capture_output=True,
+        check=False, capture_output=True,
         text=True,
         encoding="utf-8",
         errors="replace",
@@ -134,7 +133,7 @@ def test_cli_jsonl_multiple_files(tmp_path: Path):
             "--output",
             str(output_file),
         ],
-        capture_output=True,
+        check=False, capture_output=True,
         text=True,
         encoding="utf-8",
         errors="replace",
@@ -185,7 +184,7 @@ def test_cli_jsonl_multiple_files_skip_invalid(tmp_path: Path):
             str(output_file),
             "--skip-invalid",
         ],
-        capture_output=True,
+        check=False, capture_output=True,
         text=True,
         encoding="utf-8",
         errors="replace",
@@ -233,7 +232,7 @@ def test_cli_jsonl_unicode(tmp_path: Path):
             "--output",
             str(output_file),
         ],
-        capture_output=True,
+        check=False, capture_output=True,
         text=True,
         encoding="utf-8",
         errors="replace",
@@ -289,7 +288,7 @@ def test_cli_jsonl_integration(tmp_path: Path):
             "--output",
             str(output_file),
         ],
-        capture_output=True,
+        check=False, capture_output=True,
         text=True,
         encoding="utf-8",
         errors="replace",
