@@ -1,0 +1,16 @@
+{"timestamp": "2025-02-01T10:00:00Z", "level": "INFO", "source": "api", "message": "ok"}
+{"timestamp": "2025-02-01T10:01:00Z", "level": "INFO", "source": "api", "message": "oops"
+{"timestamp": "2025-02-01T10:02:00Z", "level": "ERROR", "source": "db", "message": "ok"}
+[1, 2, 3]
+42
+{"timestamp": "2025-02-01T10:03:00Z", "level": "INFO", "message": "нет source"}
+{"timestamp": "2025-02-01T10:03:30Z", "level": "INFO", "source": "   ", "message": "source из пробелов"}
+{"timestamp": "2025-02-01T10:04:00Z", "level": "FATAL", "source": "api", "message": "неизвестный level"}
+{"timestamp": "2025-02-01T10:04:30Z", "level": "INFO ", "source": "api", "message": "лишний пробел в level"}
+{"timestamp": "01.02.2025 10:00", "level": "INFO", "source": "api", "message": "формат даты"}
+{"timestamp": "2025-02-01T10:05:00Z", "level": "WARNING", "source": "api", "message": "ok"}
+{"level": "INFO", "source": "api", "message": "нет timestamp"}
+{"timestamp": "2025-02-01T10:06:00Z", "source": "api", "message": "нет level"}
+{"timestamp": "2025-02-01T10:07:00Z", "level": "INFO", "source": "api"}
+not json at all
+{"timestamp": "2025-02-01T10:09:00Z", "level": "CRITICAL", "source": "db", "message": "ok"}

@@ -1,0 +1,3 @@
+{"timestamp": "2025-03-01T10:00:00Z", "level": "INFO", "source": "приложение", "message": "Привет, мир!"}
+{"timestamp": "2025-03-01T10:01:00Z", "level": "WARNING", "source": "数据库", "message": "Ошибка: температура 25 °C"}
+{"timestamp": "2025-03-01T10:02:00Z", "level": "ERROR", "source": "app", "message": "Ошибка 🚀 — файл не найден"}
