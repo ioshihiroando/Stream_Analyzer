@@ -1,0 +1,11 @@
+{"timestamp": "2025-01-15T10:00:00+00:00", "level": 5, "source": "app", "message": "msg"}
+{"timestamp": "2025-01-15T10:01:00+00:00", "level": 20, "source": "app", "message": "msg"}
+{"timestamp": "2025-01-15T10:02:00+00:00", "level": true, "source": "app", "message": "msg"}
+{"timestamp": "2025-01-15T10:03:00+00:00", "level": null, "source": "app", "message": "msg"}
+{"timestamp": "2025-01-15T10:04:00+00:00", "level": ["ERROR"], "source": "app", "message": "msg"}
+{"timestamp": "2025-01-15T10:05:00+00:00", "level": "INFO", "source": 7, "message": "msg"}
+{"timestamp": "2025-01-15T10:06:00+00:00", "level": "INFO", "source": null, "message": "msg"}
+{"timestamp": "2025-01-15T10:07:00+00:00", "level": "INFO", "source": ["db"], "message": "msg"}
+{"timestamp": 20250115100000, "level": "INFO", "source": "app", "message": "msg"}
+{"timestamp": null, "level": "INFO", "source": "app", "message": "msg"}
+{"timestamp": "2025-01-15T10:10:00+00:00", "level": "INFO", "source": "app", "message": "the only valid line"}

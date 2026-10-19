@@ -1,0 +1,12 @@
+{"timestamp": "2025-01-15", "level": "INFO", "source": "app", "message": "bad: '2025-01-15'"}
+{"timestamp": "2025-01-15T10:00:00.5+00:00", "level": "INFO", "source": "app", "message": "bad: '2025-01-15T10:00:00.5+00:00'"}
+{"timestamp": "2025-01-15T10:00:00.123Z", "level": "INFO", "source": "app", "message": "bad: '2025-01-15T10:00:00.123Z'"}
+{"timestamp": "yesterday", "level": "INFO", "source": "app", "message": "bad: 'yesterday'"}
+{"timestamp": "", "level": "INFO", "source": "app", "message": "bad: ''"}
+{"timestamp": "2025-13-45T10:00:00Z", "level": "INFO", "source": "app", "message": "bad: '2025-13-45T10:00:00Z'"}
+{"timestamp": "2025-02-30T10:00:00Z", "level": "INFO", "source": "app", "message": "bad: '2025-02-30T10:00:00Z'"}
+{"timestamp": "2025-01-15T25:00:00Z", "level": "INFO", "source": "app", "message": "bad: '2025-01-15T25:00:00Z'"}
+{"timestamp": "not a date", "level": "INFO", "source": "app", "message": "bad: 'not a date'"}
+{"timestamp": "10:00:00", "level": "INFO", "source": "app", "message": "bad: '10:00:00'"}
+{"timestamp": "2025-01-15T10:30:00+00:00", "level": "INFO", "source": "app", "message": "the only valid line"}
+{"level":"ERROR","source":"api","message":"Ошибка запроса"}

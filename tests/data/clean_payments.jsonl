@@ -1,0 +1,20 @@
+{"timestamp": "2025-01-15T08:02:00+00:00", "level": "INFO", "source": "billing", "message": "Billing service started"}
+{"timestamp": "2025-01-15T08:04:30+00:00", "level": "INFO", "source": "billing", "message": "Invoice #1001 created"}
+{"timestamp": "2025-01-15T08:06:00+00:00", "level": "INFO", "source": "gateway", "message": "Payment request received: order 5521"}
+{"timestamp": "2025-01-15T08:06:03+00:00", "level": "INFO", "source": "billing", "message": "Payment accepted: order 5521"}
+{"timestamp": "2025-01-15T08:10:20+00:00", "level": "DEBUG", "source": "billing", "message": "Currency rates refreshed"}
+{"timestamp": "2025-01-15T08:13:45+00:00", "level": "WARNING", "source": "billing", "message": "Payment provider latency above 2s"}
+{"timestamp": "2025-01-15T08:16:00+00:00", "level": "ERROR", "source": "billing", "message": "Card declined: order 5530"}
+{"timestamp": "2025-01-15T08:18:30+00:00", "level": "ERROR", "source": "gateway", "message": "Payment provider returned HTTP 502"}
+{"timestamp": "2025-01-15T08:18:31+00:00", "level": "CRITICAL", "source": "billing", "message": "Payment provider unreachable"}
+{"timestamp": "2025-01-15T08:19:00+00:00", "level": "WARNING", "source": "billing", "message": "Switching to backup provider"}
+{"timestamp": "2025-01-15T08:19:05+00:00", "level": "INFO", "source": "billing", "message": "Backup provider is active"}
+{"timestamp": "2025-01-15T08:22:10+00:00", "level": "INFO", "source": "billing", "message": "Invoice #1002 created"}
+{"timestamp": "2025-01-15T08:25:00+00:00", "level": "INFO", "source": "notifier", "message": "Email sent to anna@example.com"}
+{"timestamp": "2025-01-15T08:25:40+00:00", "level": "ERROR", "source": "notifier", "message": "SMTP connection refused"}
+{"timestamp": "2025-01-15T08:26:10+00:00", "level": "INFO", "source": "notifier", "message": "Email sent to boris@example.com"}
+{"timestamp": "2025-01-15T08:28:00+00:00", "level": "DEBUG", "source": "notifier", "message": "Template cache warmed up"}
+{"timestamp": "2025-01-15T08:35:15+00:00", "level": "INFO", "source": "billing", "message": "Daily report generated: 42 payments, 1 refund"}
+{"timestamp": "2025-01-15T08:41:00+00:00", "level": "WARNING", "source": "notifier", "message": "Queue length is 250"}
+{"timestamp": "2025-01-15T08:42:30+00:00", "level": "INFO", "source": "notifier", "message": "Queue drained"}
+{"timestamp": "2025-01-15T08:55:00+00:00", "level": "INFO", "source": "billing", "message": "Billing service healthy"}

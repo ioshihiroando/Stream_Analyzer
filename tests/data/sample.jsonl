@@ -1,0 +1,10 @@
+{"timestamp": "2025-01-15T10:00:00+00:00", "level": "INFO", "source": "auth", "message": "User logged in"}
+{"timestamp": "2025-01-15T10:00:05+03:00", "level": "DEBUG", "source": "api", "message": "Request received: GET /users"}
+{"timestamp": "2025-01-15T10:01:10+00:00", "level": "ERROR", "source": "db", "message": "Connection failed, retrying"}
+{"timestamp": "2025-01-15T10:02:00+00:00", "level": "WARNING", "source": "api", "message": "Slow response: 2.5s"}
+{"timestamp": "2025-01-15T10:03:30+00:00", "level": "ERROR", "source": "db", "message": "Query timeout"}
+{"timestamp": "2025-01-15T10:04:00+00:00", "level": "CRITICAL", "source": "payments", "message": "Payment gateway unreachable"}
+{"timestamp": "2025-01-15T10:05:15+00:00", "level": "INFO", "source": "auth", "message": "Пользователь вышел из системы"}
+{"timestamp": "2025-01-15T10:06:00+00:00", "level": "ERROR", "source": "auth", "message": "Token expired\nuser=anna"}
+{"timestamp": "2025-01-15T10:07:45+00:00", "level": "INFO", "source": "cache", "message": "Он сказал \"привет\""}
+{"timestamp": "2025-01-15T10:08:00+00:00", "level": "ERROR", "source": "payments", "message": "Card declined"}
